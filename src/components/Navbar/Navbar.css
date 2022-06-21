@@ -39,12 +39,6 @@ ul {
     font-family: 'Roboto';
 }
 
-.list-container div li:hover{
-    padding: 10px;
-    border:1px solid white;
-    
-    transition: 0.5s;
-}
 
 .list-container div  div{
     border:1px solid white;
@@ -56,11 +50,6 @@ ul {
   display: flex;
 }
 
-.list-container div  div:hover{
-   background-color: white;
-   color: black;
-   transition: 0.5s;
-}
 
 
 
@@ -69,55 +58,67 @@ li {
 
 }
 
+ul div {
+    display: flex;
+    align-items: center;
+    
+}
+
+h3{
+    position: relative;
+    left: -10px;
+}
 
 .App-logo {
     height: 10vmin;
     pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
+.input-bar{
+    width: 25vw;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: white;
+    border-radius: 15px;
+  }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
+  .profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    margin: 0 35px;
+  }
+  
 
-    to {
-        transform: rotate(360deg);
-    }
-}
+  .search-input{
+     margin-left: 250px;
+     border: 1px solid white;
+     border-radius: 25px;
+  }
 
-@media screen and (max-width: 850px) {
-    
+
+@media screen and (max-width: 950px) {
+    .navbar-container {
+
+    }
     ul {
         list-style-type: none;
-        display: block;
+        display: flex;
         
         padding: 15px;
     }
 
-    .App-logo{
-       margin-left: 30vw;
-    }
+  
     
     .list-container {
-        display: block;
-        
-    }
-    .list-container-inactive {
-        display: none;
-        
-    }
-    .list-box{
         display: flex;
-        flex-direction: column;
-        margin: 0px;
-        transition: 0.5s;
+        position: relative;
+        left: -140px;     
     }
+    
+  
     .list-container div  div{
         width: 50px;
         align-items: center;
