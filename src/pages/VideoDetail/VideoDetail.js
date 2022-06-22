@@ -32,9 +32,9 @@ function VideoDetail() {
           
           </div>
           <div style={{display:"flex",flex:1}}>
-          <div className='grid-container'>
+          <div className='grid-container-video-detail'>
        {images.map((item, index) => {
-         return <div className='grid-item'>
+         return <div className='grid-item-video-detail'>
            <picture>
              <img src={item.urls.regular} style={{
                height: "100px",
